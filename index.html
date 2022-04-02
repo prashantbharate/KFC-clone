@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://online.kfc.co.in/&size=16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <!-- welcome page script -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=David+Libre&family=Oswald:wght@600&display=swap" rel="stylesheet">
+   <link
+   rel="stylesheet"
+   href="https://unpkg.com/swiper/swiper-bundle.min.css"
+ />
+ <link rel="stylesheet" href="dummy.css">
+    <title>KFC | Order KFC Chiken Online & Find Restaurants</title>
+   
+<style>.topmenu{
+    width:100%;
+    display: flex;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 20px 0px;
+    margin-left: -20px;
+    /* border:  1px solid red; */
+    background-color: white;
+    margin-top: -110px;
+}
+
+.topmenu > div
+{
+    width:10%;
+    margin:auto;
+}
+.topmenu >div:nth-child(3)
+{
+    width: 60px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.imgkfc{
+    width: 100%;
+    height: 25px;
+}
+.menuname{
+    text-align: center;
+}
+.imgsignin{
+    margin-left:82%;
+}
+.span{
+  border-left: 0.3px solid black;
+  margin-left: 8px;
+}
+#divseven{
+    width:60px;
+}
+.kfcbox{
+    height:50px;
+}
+.div8{
+  display: flex;
+}
+.ripe{
+    margin-top: 10px;
+    margin-right: 8px;
+    font-weight: bold;
+}
+     
+    /* old nav bar css code  */
+       /* #nav{
+             width : 100%;
+            /* border : 1px solid red ;  */
+             /* height : 50px; 
+            padding-top: 20px;
+         } */
+          /* .nav1{
+              float: left;
+              width : 25%;
+              margin-left: 3%;
+              /* border: 1px solid red; */
+              /* padding : 25px;
+               */
+          /* } 
+          .nav2{ */
+              /* float: right;
+              width : 20%;
+               margin-right: 5%; 
+               /* border: 1px solid red; */
+              /* padding : 25px; */
+          /* } */ 
+          .nav1>ul{
+              display : flex ;
+              justify-content:space-between;
+              font-weight: bold;
+              
+          } 
+          .nav2>ul{
+              display : flex ;
+              justify-content: space-around;
+              font-weight: bold;
+        }  
+        li{
+            list-style: none;
+        } 
+       .deals-gls{
+            text-decoration: none;
+            color : black ; 
+        } 
+
+        .mid{
+        width : 100%;
+        height: 50px;
+        background-color: #202124;
+        color : white ; 
+        padding: 5px;
+        /* border:  1px solid green; */
+        /* margin-top: 110px; */
+        margin-left: -9px;
+        text-align: center;
+         margin-top: 100px;
+      }  
+      .mid>h4{
+        text-align: center;
+      }
+      
+      #button-start{
+           width : 200px;
+         background-color: red;
+          border-radius: 30px;
+          padding : 10px ; 
+          border : none ; 
+          color: white;
+          font-size: 20px;
+          text-decoration: none;
+      } 
+      .start-gls{
+          color: white;
+          text-decoration: none;
+      }
+       .midBottom{
+           background-color: #f8f7f5;
+           width : 100%;
+           height : 100px;
+           margin-top: -23px;
+       } 
+       #button{
+           margin-left: 20px;
+           padding-top: -10px;
+           
+       }
+       #topbar{
+           /* margin-left: -400px; */
+           text-align: center;
+           margin: auto;
+       }
+       .categories{
+            max-width:  80%;
+            margin : auto;
+            height : auto;
+          
+        }
+         .text{
+             max-width : 40%;
+             height : 50px;
+             margin-left: 10px;
+             margin-top: 100px;
+             font-weight: bold;
+        } 
+        .categories>div:nth-child(1),.categories>div:nth-child(2){
+            display : inline-block
+        } 
+        .categories>div:nth-child(2){
+            width : 60% ;
+            float : right ; 
+            height : 20px;
+            margin-top: 120px;
+     }  
+      #container{
+          display : grid ;
+          grid-template-columns: 23% 23% 23% 23%;
+          grid-template-rows: 220px 220px;
+          grid-gap : 2%;
+          row-gap: 70px;
+         text-align: center;
+          margin-top: 50px;
+        
+      } 
+       #container>div{
+           border-radius: 10px;
+           background-color: #f8f7f5;
+           height: 260px;
+       } 
+       /* #container>div:nth-child(8){
+           grid-column-start: 3;
+           grid-column-end: 5;
+       }  */
+     .boxtext{
+          text-align: center;
+          font-weight: bold;
+          padding : 20px;
+          margin-bottom: 20px;
+        }
+        .Image{
+            max-width: 100% ;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+           
+        } 
+
+             #G{ 
+                width : 50%;
+                height : 70%;
+                margin : auto ; 
+                margin-top: 30px;
+                background-image: url("https://online.kfc.co.in/static/media/finger_lickin.fc21c805.svg");
+                background-size: contain;
+                background-repeat: no-repeat;
+             } 
+            
+              #bottom{ 
+                   max-width: 100%;
+                   height : 600px;
+                   background-color: #202124;
+                   color : white;
+                   margin-top: 80px;
+               }
+              .offer{
+                  display : flex;
+                  justify-content: space-between;
+                  width:80%;
+                  margin : auto;
+                } 
+ .carousel1>div:nth-child(1){
+     margin-left: 100px;
+ }
+ .carousel-cell1 {
+  width: 28%;
+  height: 400px;
+  margin-right: 100px;
+  background: #f8f7f5;
+  border-radius: 5px;
+  text-align: center;
+  /* counter-increment: carousel-cell1; */
+}
+.carousel-cell1:before {
+  display: block;
+  text-align: center;
+  /* content: counter(carousel-cell1); */
+  line-height: 10px;
+  font-size: 80px;
+  color: white;
+}
+/* * { box-sizing: border-box; } */
+
+body { font-family: sans-serif; }
+
+.carousel1 {
+  background: #202124 ;
+}  
+ .image2{
+     width : 100% ; 
+     border-radius: 5px;
+    }
+ .Text{
+     color : red;
+     font-weight: bold;
+     font-size: 30px;
+     line-height: 2px;
+ } 
+ .Text1{
+      color : black; 
+   }  
+   .copun {
+       width : 100%;
+       
+       display: flex;
+       justify-content:space-around
+   }
+ .redeem {
+    border-radius: 30px;
+    width : 150px;
+    background-color: white;
+    border: 1px solid black;
+}
+   .hrf{
+           text-decoration: underline;
+           margin-top: 10px;
+ } 
+ .Imagelast{
+     height:100px;
+     margin-top: 40px;
+     margin-left: 30px;
+ }
+ .boxtextmenu{
+     margin-top: 70px;
+     margin-left: 50px;
+     font-weight: bold;
+ }
+ .line>hr{
+     margin-left: -60px;
+     margin-top: 15px;
+     color:#e3e3e3;
+     border-top: 2px solid;
+ }
+  
+ /* footer styles */
+.container{
+    max-width: 60%;
+    background-color:#202124;
+    margin-left: 5% ;
+    display: flex;
+    height: 220px;
+}
+.kfc-logo{
+    max-width: 10%;
+    margin-left: 7%;
+    margin-top: 1%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color:#202124;
+    padding: 70px 0;
+    display: flex;
+    margin-left: -0.5%;
+    width: 100%;
+}
+.footer-col{
+    width:20%;
+    padding: 0 px;
+}
+.footer-col h4{
+    font-size: 14px;
+    color: white;
+    text-transform:capitalize;
+    margin-bottom: -10px;
+    font-weight: 500;
+    position: relative;
+    padding-left: 40px;
+}
+.footer-col h4 ::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: orange;
+    height: 2px;
+    box-sizing: border-box;
+    width: px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 13px;
+    /* text-transform: capitalize; */
+    text-decoration: none;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: rgb(255, 242, 218) ;
+    padding-left: 8px;
+}
+.playstore{
+    margin-left: 5%;
+    margin-top: 1%;
+}
+.appstore{
+    margin-left: 3%;
+    margin-top: 1%;
+}
+.foot-col-sol .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease ;
+    
+}
+.foot-col-sol .social-links a:hover{
+    color: grey;
+    background-color: rgb(255, 255, 255);
+}
+.foot-col-sol{
+    background-color:#202124;
+    /* border: 1px solid red; */
+    margin-top: -25px;
+    width: 101%;
+    margin-left: -0.5%;
+}
+.social-links{
+    margin-left: 85%;
+}
+.fa-solid{
+    color: red;
+}
+.footer-col>#underline a{
+    text-decoration: underline;
+}
+/* welcome page css starts */
+#welcomePage{
+              background-color:#f8f7f5;
+              height:140px;
+              width:100%;
+
+          }
+          #welcomePage>img{
+              margin-left:12%;
+              height:18%;
+          }
+          #welcomePage>h2{
+              margin-left:12%;
+              font-weight: 700;
+              font-size: 44px;
+            margin-top: 13px;
+              font-family: 'David Libre', serif;
+              font-family: 'Oswald', sans-serif;
+              color: black;
+          }
+          /* welcome page css completed */
+
+          /* offers and deals css starts */
+       .img_box{
+           height: 420px;
+           width: 315px;
+           /* border: 1px solid black; */
+           background-color: white;
+           /* margin-top: 100px; */
+           border-radius: 10px;
+           
+       }
+       .img_box>img{
+           height: 61%;
+           width: 100%;
+           max-width: 100%;
+           border-top-left-radius: 10px;
+           border-top-right-radius: 10px;
+       }
+       .slider_container .container-offer{
+           padding: 0 15px;
+           max-width: 1300px;
+           margin: 0 auto;
+           padding-left: 100px;
+       }
+       .card_slider{
+           padding: 50px 0;
+       }
+       .main-offer-container{
+           height: 600px;
+           width: 101%;
+           background-color: #202124;
+           margin-left: -0.5%;
+           /* margin-top: 100px; */
+       }
+       .rdmBtn{
+           height: 42px;
+           width: 120px;
+           border-radius: 20px;
+           border: 1px solid black;
+           background-color: white;
+           margin-left: 60px;
+           font-weight: 500;
+           cursor: pointer;
+           color: black;
+           font-size: 14px;
+        }
+        .rdmBtn:hover{
+            background-color:black;
+            color:white;
+        }
+        img+h4{
+            color:#e4002b;
+            text-align:center;
+            font-size:28px;
+            padding-top: 10px;
+            margin-top:-3px;
+            font-weight:bolder;
+        }
+        .viewD{
+            color:#666565;
+            font-size:14px;
+            align-items:bottom;
+            font-weight: 700;
+            margin-left: 25px;
+            text-decoration: none;
+        }
+        .viewD:hover{
+            background-color: rgb(218, 218, 218);
+            height: 40px;
+        }
+        .text-gap{
+            text-align: center;
+            padding-left: 15px;
+            font-weight: 600;
+            color: #525252;
+            margin-top: -15px;
+            padding-right: 15px;
+            font-size: 13px;
+        }
+        #viewdeals{
+            text-decoration: none;
+            color: white;
+            display: flex;
+            margin-top: 13px;
+        }
+         #dealsContainer{
+            height:100px;
+            width:101%;
+            margin-top: 100px;
+            background-color:#202124;
+            margin-bottom: -100px;
+            margin-left: 0.5%;
+            padding-left: 0.5%;
+        }
+     
+        #p{
+        font-weight:700;
+        font-size:34px;
+        line-height:32px;
+        color:#ffffff;
+        text-align:center;
+        font-family: 'Nunito Sans', sans-serif;
+        }
+        h4+p{
+            color:black;
+            font-size:13px;
+            margin-top:-10px;
+        }
+        #arrowFlex{
+            display:flex;
+            color:#ffffff;
+            font-weight:500;
+            font-size:14px;
+            line-height:24px;
+            margin-top:15px;
+            font-family: 'David Libre', serif;
+        }
+        .fa-solid{
+            margin-top:18px;
+            margin-left:10px;
+        }
+        #spaceBet{
+            display:flex;
+            justify-content:space-between;
+            width:80%;
+            margin:auto;
+        }
+            
+      
+</style>
+</head>
+<body>
+    <!-- <div id="nav">
+        <div class="nav1">
+            <ul>
+                <a href="#"><li><img src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg" alt="KFC"></li></a>
+                 <a href="menu.html"><li>Menu</li></a>
+                 <a href="#"><li>Deals</li></a>
+            </ul>
+         </div> 
+         <div class="nav2">
+             <ul>
+             <a href="#"><li><i style="font-size: 30px" class="fas fa-user-circle"></i>Sign In</li></a>
+             <a href="#"><li>Cart<i style="font-size: 30px ; color : tomato" class="fas fa-shopping-cart"></i></li></a>
+             <a href="#"><li><img src="" alt="KFC"></li></a>
+         </ul>
+         </div> 
+    </div> -->
+   <header>
+    <div class="topmenu">
+        <div></div>
+        <div>
+         <a href="index.html"><img class="imgkfc" src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg" alt=""></a>
+        </div>
+        <div class="div3"><h4 class="menuname"><a class="deals-gls" href="menu.html">Menu</a></h4></div>
+        <div><h4><a  class="deals-gls" href="deals.html">Deals</a></h4></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        
+        <div><img class="imgsignin" src="https://images.ctfassets.net/wtodlh47qxpt/6bJdGLRkksNvWP4LI9ZiFF/cb89d6393492fd093e0f99980abfa39e/Account_Icon.svg" alt=""></div>
+        <div id="divseven"><h4 class="signin"><a class="deals-gls" href="sign.html">Sign in</a><span class="span"></span></h4></div>
+        <div class="div8" ><div class="ripe">₹0</div><img class="kfcbox" src="https://images.ctfassets.net/wtodlh47qxpt/6qtBVFuno7pdwOQ9RIvYm9/d13e9b7242980972cf49beddde2cc295/bucket_cart_icon.svg" alt=""></div>
+    </div>
+</header>
+    <div class="mid">
+        <h4 id="topbar">LET'S ORDER FOR DELIVERY, PICK UP, OR DINE-IN <span><button id="button-start"><a class="start-gls" href="#">start order</a></button></span> </h4>    </div>
+    <!-- there should be some other div here for the sliding images and "welcome to KFC" -->
+    <div class="main-carousel">
+        <div class="cell"><img src="https://images.ctfassets.net/wtodlh47qxpt/bwwtSv4zmZZm42c5wSg8Z/e24fc963e2fe768d2bf36bc1c200f7ae/Matchday_Banner_1440x396px_A.jpg" alt="first slide"></div>
+        <div class="cell"><img src="https://images.ctfassets.net/wtodlh47qxpt/6C7plVV6khmYCotBjkMbpX/1871bd3bc4f6b4ef704564f47bf2cffe/KFC_600_Bucket_KV_Digital_desktop.png" alt="second slide"></div>
+        <div class="cell"><img src="https://images.ctfassets.net/wtodlh47qxpt/4w2NU51eNqAlF0S4k3YLTB/0872e046c202005f49e6c94489c8ce40/4Value_Burger_1440x396px.png" alt="3rd slide"></div>
+    </div>
+
+    <!-- welcome page html -->
+    <div id="welcomePage">
+        <img src="https://online.kfc.co.in/static/media/Stripes_Small_OffersIcon.87fc6256.svg" alt="">
+        <h2>WELCOME TO KFC!</h2>
+    </div>
+    <!-- welcome page completed -->
+    
+    <div class="categories">
+        <div class="text"><h1>BROWSE CATEGORIES</h1></div>
+        <div class="line"><hr></div>
+        <div id="container">
+            <div id="a">
+                <div class="boximg">
+                    <a href="menu.html"><img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT3355.jpg?ver=13.9" class="Image"></a>
+                </div>
+                <div class="boxtext">MATCH DAY SPECIALS</div>
+            </div>
+            <div id="b">
+                <div class="boximg">
+                    <a href="menu.html"><img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT3131.jpg?ver=13.9" class="Image"></a>
+                </div>
+                <div class="boxtext">CHICKEN BUCKETS</div>
+            </div>
+            <div id="c">
+                <div class="boximg">
+                    <a href="menu.html"><img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT3342.jpg?ver=13.9" class="Image"></a>
+                </div>
+                <div class="boxtext">BIRYANI BUCKETS</div>
+            </div>
+            <div id="d">
+                <div class="boximg">
+                    <a href="menu.html"><img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT3246.jpg?ver=13.9" class="Image"></a>
+                </div>
+                <div class="boxtext">BOX MEALS</div>
+            </div>
+            <div id="e">
+                <div class="boximg">
+                    <a href="menu.html"><img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT3132.jpg?ver=13.9" class="Image"></a>
+                </div>
+                <div class="boxtext">BURGERS</div>
+            </div>
+            <div id="f">
+                <div class="boximg">
+                    <a href="menu.html"><img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT3311.jpg?ver=13.9" class="Image"></a>
+                </div>
+                <div class="boxtext">STAY HOME SPECIALS</div>
+            </div>
+            <div id="h">
+                <div class="boximg">
+                    <a href="menu.html"><img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT3134.jpg?ver=13.9" class="Image"></a>
+                </div>
+                <div class="boxtext">SNACKS</div>
+            </div>
+            <div id="g">
+                <div class="boximg">
+                    <a href="#"><img src="https://online.kfc.co.in/static/media/finger_lickin.fc21c805.svg" class="Imagelast"></a></div>
+                    <div class="boxtextmenu"><a class="deals-gls" href="#">View All Menu</a></div>
+            </div>
+        </div>
+     </div> 
+     <!-- offers and deals headding  -->
+     <div id="dealsContainer">
+        <div id="spaceBet">
+              <div id="p">
+                <p>OFFERS AND DEALS</p>
+              </div>
+             
+           
+              <div id="arrowFlex">
+                <span><a href="deals.html"  id="viewdeals">View All Deals</a></span><p></p>
+                <span><i class="fa-solid fa-arrow-right-long"></i></span>
+             </div>
+        </div>
+
+     <!--  offers black box  -->
+     <div class="check"></div>
+     <div class="main-offer-container">
+        <section class="slider_container">
+            <div class="container-offer">
+                <div class="swiper card_slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="img_box">
+                                <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/lg/ADDCHK99.jpg" alt="1st Image">
+                                <h4>2 PC HOT AND CRIS.</h4>
+                                <p class="text-gap">Add 2 Pc Hot n Crispy Chicken @ just Rs 99 on min cart value of Rs 499 or more...</p>
+                                <span><a href="#" class="viewD" id="gls-myBtn">View Details</a> <button class="rdmBtn">Redeem</button></span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_box">
+                                <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/lg/ADDCHK99.jpg" alt="1st Image">
+                                <h4>UPTO RS 100 OFF O..</h4>
+                                <p class="text-gap">Upto Rs 100 off on min cart value of Rs 599 or more . Applicable on 4th order onward...</p>
+                                <span><a href="#"  class="viewD" id="gls-myBtn">View Details</a> <button class="rdmBtn">Redeem</button></span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_box">
+                                <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/lg/ADDCHK99.jpg" alt="1st Image">
+                                <h4>1 PC FREE CHICKEN..</h4>
+                                <p class="text-gap">1 Pc free Chicken Zinger on a cart value of 399 or above on first order.Only for..</p>
+                                <span><a href="#"  class="viewD" id="gls-myBtn">View Details</a> <button class="rdmBtn">Redeem</button></span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_box">
+                                <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/lg/ADDCHK99.jpg" alt="1st Image">
+                                <h4>1 PC FREE VEG..</h4>
+                                <p class="text-gap">1 Pc free Veg Zinger on a cart value of 399 or above on first order. Only for registered.</p>
+                                <span><a href="#"  class="viewD" id="gls-myBtn">View Details</a> <button class="rdmBtn">Redeem</button></span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_box">
+                                <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/lg/ADDCHK99.jpg" alt="1st Image">
+                                <h4>1 PC FREE VEG..</h4>
+                                <p class="text-gap">1 Pc free Veg Zinger on a cart value of 399 or above on first order. Only for registered.</p>
+                                <span><a href="#" class="viewD" id="gls-myBtn">View Details</a> <button class="rdmBtn">Redeem</button></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+       
+<!-- This is footer  -->
+<footer>
+<div class="footer">
+    <div class="kfc-logo">
+   <a href="index.html"><img src="https://images.ctfassets.net/wtodlh47qxpt/25FSYFuEtGct8NSrtpKe6d/b602f6fe0bf294e6a6dff5d7648bf594/KFC_Logo.svg" alt="kfc-footer-img"></a>     
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+               <h4>KFC Food</h4>
+                <ul>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="#">Order Lookup</a></li>
+                    <li><a href="giftcard.html">Gift Card</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="help.html">Get Help</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">KFC Feedback</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                    <li><a href="cautionNotice.html">Caution Notice</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>KFC India</h4>
+                <ul>
+                    <li><a href="aboutkfc.html">About KFC</a></li>
+                    <li><a href="#">KFC care</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="#">Our Golden Past</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+             <!-- <span><i class="fa-solid fa-location-dot"></i>KFC</span> -->
+           <ul id="underline">
+             <li><a href="#"><i class="fa-solid fa-location-dot"></i>Find a KFC</a></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+    <div class="playstore">
+      <a href="https://play.google.com/store/apps/details?id=com.yum.kfc" target="_blank"><img src="https://images.ctfassets.net/wtodlh47qxpt/6BdZsyjLn64c06uCIE73d1/fb530f5d5231533b049463f6c7e8a2b1/google_play.svg" alt="playstore"></a>  
+    </div>
+    <div class="appstore">
+      <a href="https://apps.apple.com/in/app/kfc-india/id915824379" target="_blank"> <img src="https://images.ctfassets.net/wtodlh47qxpt/em3mcMuAdXWlgucSJiTbS/d3ae7e51ed101d829e459355e255c47f/apple.svg" alt="appstore"></a> 
+    </div>
+</div>
+<div class="foot-col-sol">
+   <div class="copyright">
+   </div>
+<div class="social-links">    
+    <a href="https://www.instagram.com/kfcindia_official/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/KFCIndia"  target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://twitter.com/KFC_India"  target="_blank"><i class="fab fa-twitter"></i></a>
+</div>
+</div>
+</footer>
+<!-- making a div for modal  -->
+<div id="modal-div">
+    <div id="gls-myModal" class="gls-modal">
+
+        <!-- Modal content -->
+        <div class="gls-modal-content">
+          <span class="gls-close"><button class="gls-close-button">
+              <img src="https://online.kfc.co.in/static/media/PopupCloseBtn.ee8133ae.svg" alt="">
+          </button></span>
+           <div id="gls-container">
+             <div class="gls-header">
+                 <h2>OFFERS & DEALS</h2>
+             </div>
+             <span class="gls-divider"></span>
+             <div class="gls-content-bold">
+                 <p>ADD 2 PC HOT N CRISPY CHICKEN @ JUST RS 99 ON MIN CART VALUE OF RS 499 OR MORE. APPLICABLE ON 2ND & 3RD ORDER FOR SIGNED IN USER.</p>
+             </div>
+             <div class="gls-valid-box">
+                 <p>Valid to 01/01/30</p>
+             </div>
+             <div class="gls-content-normal">
+                 <p>Add 2 Pc Hot n Crispy Chicken @ just Rs 99 on min cart value of Rs 499 or more. Applicable on 2nd & 3rd order for signed in user.</p>
+             </div>
+             <div class="gls-redeem">
+                 <button class="gls-button">Redeem</button>
+             </div>
+            
+      
+       
+          </div>
+        </div>
+      
+      </div>
+</div>
+<!-- completed the code for the modal -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript">
+    var swiper = new Swiper(".card_slider", {
+       slidesPerView: 3.5,
+       spaceBetween: 30,
+       speed:1000,
+       pagination: {
+         el: ".swiper-pagination",
+         clickable: true,
+       },
+       navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+     });
+</script>
+</body>
+</html>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script type="text/javascript">$('.main-carousel').flickity({
+    // options
+    cellAlign: 'left',
+    wrapAround:true,
+    freeScroll:true,
+    // contain: true,
+  });
+  </script>
+   <script src="dummy.js"></script>
