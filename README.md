@@ -46,6 +46,12 @@ so lets see what is inside KFC:
   we have help page to help our customers
   you can find a nearest KFC,even we provide you the contact Number
   in case you facing any issue with order we have solution on that you just need to contact us that we have provided you a customer number
+  
+  
+  prashant bharate
+  linkdin
+  git profile :https://github.com/prashantbharate
+  blog :
 
 
 
