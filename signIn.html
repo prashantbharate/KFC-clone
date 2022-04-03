@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-In</title>
+    <style>
+        
+
+#phoneNumberValidationLabel {
+    text-align: center;
+    color: #FF2E00;
+    margin: 15px 0;
+}
+        #main{
+            margin: 5vw 33vw;
+            display: block;
+          
+        }
+        #login_form{
+            display: block;
+          
+        }
+        .inside-Text{
+            text-align: center;
+            margin: auto;
+            display: block;
+            color: #494949;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            font-family: 'National2-Medium';
+            margin-bottom: 7%;
+
+               }
+        .kfcImg {
+            text-align: center;
+            margin: 8% auto;
+            display: block;
+            cursor: pointer;
+        }
+        .title {
+            text-align: center;
+            font-family: 'National2CondensedWeb-Medium';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 24px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: #202124;
+            margin-bottom: 7%;
+        }
+        form{
+            display: block;
+            margin-top: 0em;
+            margin-block-end: 1em;
+        }
+        #phoneNum-container {
+            position: relative;
+            display:block
+        }
+        .phoneLabel {
+            visibility: hidden;
+            font-family: 'National 2 Regular';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 22px;
+            color: #494949;
+}
+
+        #phNum{
+            border: none;
+             width: 100%;
+             border-bottom: 1px solid #202124;
+             outline: none;
+             font-family: 'National 2 Regular';
+             font-style: normal;
+             font-weight: normal;
+             font-size: 14px;
+             line-height: 24px;
+             letter-spacing: -0.1px;
+             color: #202124;
+             padding-bottom: 0.7%;
+             position: relative;
+        }
+        #clrImg{
+            position: absolute;
+            right: 0;
+            top: 12%;
+            display: none;
+        }
+        .errorImg {
+    margin-right: 2%;
+}
+        .terms {
+            font-family: 'National 2 Regular';
+            margin-top: 5%;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 20px;
+            color: #202124;
+        }
+        .linkPages {
+            cursor: pointer;
+        }
+        .btnDiv {
+            text-align: center;
+            margin-top: 7%;
+            margin-bottom: 5%;
+        }
+        .btnSendCode {
+            height: 44px;
+            padding: 10px 40px;
+            color: #ffffff;
+            font-size: 13px;
+            background-color: #202124;
+            border: none;
+            outline: none;
+            border-radius: 200px;
+            cursor: pointer;
+        }
+        .orSkipDiv {
+            width: 34vw;
+        }
+        .orDiv {
+            display: flex;
+            margin: 5% 0;
+
+        }
+
+        .orLeft, .orRight {
+            width: 100%;
+            border-top: 1px solid #000000;
+            margin-top: 10px;
+            opacity: 0.1;
+        }
+
+        .orCenter {
+            margin: 0 4%;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 24px;
+            color: #202124;
+            font-family: 'National 2 Regular';
+        }
+        .skipBtnDiv {
+            margin-top: 3%;
+            text-align: center;
+        }
+
+        .skipBtn {
+            width: 100%;
+            background: #ffffff;
+            color: #202124;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 30px;
+            align-items: center;
+            text-align: center;
+            outline: none;
+            border-radius: 66px;
+            border: 1px solid #202124;
+            font-family: 'National 2 Regular';
+            padding: 8px 40px;
+            cursor: pointer;
+
+        }
+        body{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="login_form">
+            <div class="inside-Text">Sign in / Sign up</div>
+           
+            <div class="kfcImg"> <img src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg"  /></div>
+            <div class="title">Let’s Sign In or Create account with your phone number!</div>  
+            
+        </div>
+        <form id="form">
+            <div class="phoneLabel">Phone Number</div>
+            <div id="phoneNum-container">
+                <input id="phNum" name="phoneNumber" placeholder="Phone Number*" maxlength=10 type="tel" onkeypress ="fun1(event)"/>
+                <img id="clrImg" src="https://login.kfc.co.in/auth/resources/1vkce/login/kfcIndiaLoginUIDev_2021_10_27_16_49/images/Clear_icon.svg"  style="display: block">
+            </div>
+            <div id="phoneNumberValidationLabel" style="display: flex;">
+                <div class="errorImg">
+                    <img  id ="error"/>
+                    </div>
+                <div class="errorText" id="phoneErrorText" ></div>
+            </div>
+            <div class="terms">
+                By “logging in to KFC”, you agree to our 
+                <u><b class="linkPages"> Privacy Policy</b></u>
+                and
+                <u><b class="linkPages">Terms & Conditions.</b></u>
+
+            </div>
+            <div class="btnDiv">
+                <button id="btnSendCode" class="btnSendCode" >Send Me a Code</button>
+            </div>
+        </form>
+        <div class="orSkipDiv">
+            <div class="orDiv">
+                <div class="orLeft"></div>
+                <div class="orCenter">or</div>
+                <div class="orRight"></div>
+
+            </div>
+            <div class="skipBtnDiv">
+                <button class="skipBtn" id="skipBtn" onclick="goBack()">Skip, Continue As Guest</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+
+    function fun1(event){
+        
+       if(event.target.value.length!=0 || event.target.value.length!=10){
+        document.querySelector("#error").src="https://login.kfc.co.in/auth/resources/1vkce/login/kfcIndiaLoginUIDev_2021_10_27_16_49/images/Error.svg"
+        document.querySelector(".errorText").innerText="Please enter a valid 10-digit  mobile number";
+       }
+       if(event.target.value.length==10){
+        document.querySelector("#error").src=""
+        document.querySelector(".errorText").innerText="";
+      
+
+       }
+       
+       
+    }
+    document.querySelector("form").addEventListener("submit", myFun);
+    var mob=[]
+    function goBack(){
+        window.location.href =""
+
+    }
+    function myFun(){
+        event.preventDefault();
+        var phone=document.querySelector("#phNum").value;
+        console.log(phone)
+        if(phone.length==10){
+            mob.push(phone);
+            localStorage.setItem("mobData",JSON.stringify(mob))
+            window.location.href ="otp.html"
+        } 
+    }
+   
+</script>
+</html>
