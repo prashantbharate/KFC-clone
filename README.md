@@ -29,7 +29,6 @@ Tech Stacks Used:
   1.HTML
   2.CSS
   3.JAVASCRIPT
-  4.BOOTSRAP
   
 so lets see what is inside KFC:
   we have a sign in page where you can sign in and you will get quick OTP(ONE TIME PASSWORD) which provides you 180 sec to fill the otp and qick sign in
