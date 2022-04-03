@@ -59,5 +59,9 @@ so lets see what is inside KFC:
   blog :https://medium.com/@mangaltanish103/kfc-clone-9e2434588e54
   
   ----------------------------------------------------------------------------------------------------------------------------------------
+  Lalith Sai G 
+  linkdin :https://www.linkedin.com/in/lalithsai/
+  git profile : https://github.com/lalith9212
+  blog  :https://medium.com/@lalithsaigadde/kfc-clone-6f96bfa77d02
 
-
+----------------------------------------------------------------------------------------------------------------------------------------------
