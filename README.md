@@ -64,7 +64,13 @@ so lets see what is inside KFC:
   git profile : https://github.com/lalith9212
   blog  :https://medium.com/@lalithsaigadde/kfc-clone-6f96bfa77d02
 
-----------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+ Harsh Singh 
+ linkdin : https://www.linkedin.com/in/harsh-singh-1a9b9322b/ 
+ git profile : https://github.com/Hars28 
+ blog : https://medium.com/@harsh.singh9055/kfc-clone-eb53881ca00f
+ 
+----------------------------------------------
 Mahendra Chandravanshi
 Linkedin profile 
 Git Profile
