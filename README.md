@@ -58,5 +58,6 @@ so lets see what is inside KFC:
   git profile : https://github.com/tanishmangal,
   blog :https://medium.com/@mangaltanish103/kfc-clone-9e2434588e54
   
+  ----------------------------------------------------------------------------------------------------------------------------------------
 
 
