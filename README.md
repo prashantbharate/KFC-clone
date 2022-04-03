@@ -72,6 +72,6 @@ so lets see what is inside KFC:
  
 ----------------------------------------------
 Mahendra Chandravanshi
-Linkedin profile 
-Git Profile
-Blog :
+Linkedin profile : https://www.linkedin.com/in/mahendra-chandravanshi-49a209178/
+Git Profile: https://github.com/Mahendra2611
+Blog : https://medium.com/@mahendrac121/kfc-clone-23345c5eb905
