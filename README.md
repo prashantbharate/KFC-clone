@@ -49,9 +49,9 @@ so lets see what is inside KFC:
   
   
   prashant bharate
-  linkdin
-  git profile :https://github.com/prashantbharate
-  blog :
+  linkdin :https://www.linkedin.com/in/prashant-bharate-b071b5194/  ,
+  git profile :https://github.com/prashantbharate  ,
+  blog :https://medium.com/@prshntbharate77/kfc-clone-7bf381438bef
 
 
 
