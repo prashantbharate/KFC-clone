@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rootOtp {
+    margin: 8vw 33vw;
+}
+.sign-in-header {
+    text-align: center;
+    margin: auto;
+    display: block;
+    color: #494949;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'National2-Medium';
+    margin-bottom: 7%;
+}
+.kfcImg {
+    text-align: center;
+    margin: 8% auto;
+    display: block;
+    cursor: pointer;
+}
+.title {
+    text-align: center;
+    font-family: 'National2CondensedWeb-Medium';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #202124;
+    margin-bottom: 7%;
+}
+.subTitle {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'National 2 Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #494949;
+}
+form {
+    display: block;
+    margin-top: 0em;
+    margin-block-end: 1em;
+}
+.joinNow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+.different-number {
+    font-family: 'National2-Medium';
+    color: #494949;
+    background: none;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+    outline: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+}
+.otpDiv {
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    width: 50%;
+    margin: 1% auto 4%;
+}
+.otpNum {
+    width: 20%;
+    margin: 0 auto;
+    border: none;
+    border-bottom: 2px solid #494949;
+    outline: none;
+    text-align: center;
+    font-family: 'National2CondensedWeb-Medium';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 44px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #202124;
+}
+
+
+.expireText {
+    font-family: 'National 2 Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #494949;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+#error {
+    margin-right: 2%;
+}
+
+.joinNow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+.different-number {
+    font-family: 'National2-Medium';
+    color: #494949;
+    background: none;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+    outline: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+}
+.submitBtnDiv {
+    text-align: center;
+    margin-top: 7%;
+}
+#otpBtn {
+    padding: 10px 40px;
+    background-color: #dbdbdb;
+    border-radius: 200px;
+    border: none;
+    outline: none;
+   
+}
+    </style>
+</head>
+<body>
+    <div class="rootOtp">
+        <div  id="otpPage">
+             <div class="sign-in-header">Sign In / Sign up</div>
+            <div class="kfcImg" onclick=""> <img src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg" alt="kfclogo" tabindex="1"></div>
+            <div class="title">We Just Texted You</div>
+            <div class="subTitle">Please enter the verification code we just sent to <b id="bb"></b>
+            </div>
+			<form  >
+				<input type="hidden" name="otp1" id="otp">
+				<div class="joinNow ">
+               <a href=index.html style="color: #202124;">Different Number?</a>
+				</div>
+                <div class="otpDiv" >
+					<input id="codeBox0" class="otpNum" type="tel" maxlength=1  >
+					<input id="codeBox1" class="otpNum" type="tel" maxlength=1  >
+					<input id="codeBox2" class="otpNum" type="tel" maxlength=1  >
+					<input id="codeBox3" class="otpNum" type="tel" maxlength=1  >
+				</div>
+				
+	
+				<div class="expireText"  > 
+                    <img id="error"/>
+                    <span id="timerId" ></span></div>
+					
+					
+					
+				</div>
+				
+				<div class="joinNow ">
+			               
+			                <button class="different-number">Resend the Code</button>
+			            </div>
+				<div class="submitBtnDiv">
+                    <input type="submit" id="otpBtn" value="Confirm-OTP"/>
+
+
+				</div>
+			</form>
+        </div>
+    </div>
+    
+</body>
+<script>
+
+   document.querySelector(".different-number").addEventListener("click",fun2)
+    function fun2(){
+        window.location.href="OTP.html"
+    }
+var timeleft =180;
+var downloadTimer = setInterval(function(){
+  if(timeleft <= 0){
+    document.querySelector("#error").src="https://login.kfc.co.in/auth/resources/1vkce/login/kfcIndiaLoginUIDev_2021_10_27_16_49/images/Error.svg"
+    document.querySelector("#timerId").innerText = "Your code has expired!";
+    document.querySelector("#timerId").style.color="red"
+  } else {
+    document.querySelector("#timerId").innerText = "Your code will expire in" + " "+timeleft+" " +"secs" ;
+    
+  }
+  timeleft -= 1;
+}, 1000);
+
+var a=Math.floor(Math.random()*10000);
+if(a<1000){
+    a=a*10;
+}
+alert("Your OTP is"+" "+a)
+
+
+  var mob=JSON.parse(localStorage.getItem("mobData"));
+  console.log(mob)
+  document.querySelector("#bb").append(mob)
+  document.querySelector("form").addEventListener("submit",myfun);
+function myfun(){
+    event.preventDefault();
+
+    var inp1=document.querySelector("#codeBox0").value;
+    var inp2=document.querySelector("#codeBox1").value;
+    var inp3=document.querySelector("#codeBox2").value;
+    var inp4=document.querySelector("#codeBox3").value;
+    var str=inp1+inp2+inp3+inp4;
+   
+    
+    if(str==a){
+    alert("You'Ve SuccessFully Logged-In")
+    window.location.href="home.html"
+    }
+}
+</script>
+</html>
