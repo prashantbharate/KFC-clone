@@ -52,7 +52,11 @@ so lets see what is inside KFC:
   linkdin :https://www.linkedin.com/in/prashant-bharate-b071b5194/  ,
   git profile :https://github.com/prashantbharate  ,
   blog :https://medium.com/@prshntbharate77/kfc-clone-7bf381438bef
-
-
+-------------------------------------------------------------------------------------------------------------------------------------------
+   Tanish Mangal
+  linkdin :https://www.linkedin.com/in/tanishmangal/,
+  git profile : https://github.com/tanishmangal,
+  blog :https://medium.com/@mangaltanish103/kfc-clone-9e2434588e54
+  
 
 
