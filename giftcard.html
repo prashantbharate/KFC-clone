@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://online.kfc.co.in/&size=16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>KFC Gift Card</title>
+<style>
+/* Top navbar and second bar css  */
+.topmenu{
+    width:100%;
+    display: flex;
+    position: fixed;
+    box-sizing: border-box;
+    padding: 20px 0px;
+    margin-left: -20px;
+    /* border:  1px solid red; */
+    background-color: white;
+    margin-top: -110px;
+}
+
+.topmenu > div
+{
+    width:10%;
+    margin:auto;
+}
+.topmenu >div:nth-child(3)
+{
+    width: 60px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.imgkfc{
+    width: 100%;
+    height: 25px;
+}
+.menuname{
+    text-align: center;
+}
+.imgsignin{
+    margin-left:82%;
+}
+.span{
+  border-left: 0.3px solid black;
+  margin-left: 8px;
+}
+#divseven{
+    width:60px;
+}
+.kfcbox{
+    height:40px;
+}
+.div8{
+  display: flex;
+}
+.ripe{
+    margin-top: 10px;
+    margin-right: 8px;
+    font-weight: bold;
+}
+.mid{
+        width : 100%;
+        height: 50px;
+        background-color: #202124;
+        color : white ; 
+        padding: 5px;
+        /* border:  1px solid green; */
+        /* margin-top: 110px; */
+        margin-left: -9px;
+        text-align: center;
+         margin-top: 100px;
+      }  
+      .mid>h4{
+        text-align: center;
+      }
+      
+      button{
+           width : 200px;
+         background-color: red;
+          border-radius: 30px;
+          padding : 10px ; 
+          border : none ; 
+          color : white ; 
+          font-size: 20px;
+      } 
+      .midBottom{
+           background-color: #f8f7f5;
+           width : 100%;
+           height : 100px;
+           margin-top: -23px;
+       } 
+       #button{
+           margin-left: 20px;
+           padding-top: -10px;
+           
+       }
+       #topbar{
+           /* margin-left: -400px; */
+           text-align: center;
+           margin: auto;
+       }
+       /* top nav bar and topmenu bar css completed  */
+       /* footer css started */
+       .container{
+    max-width: 60%;
+    background-color:#202124;
+    margin-left: 5% ;
+    display: flex;
+    height: 220px;
+}
+.kfc-logo{
+    max-width: 10%;
+    margin-left: 7%;
+    margin-top: 1%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color:#202124;
+    padding: 70px 0;
+    display: flex;
+    margin-left: -5px;
+}
+.footer-col{
+    width:20%;
+    padding: 0 px;
+}
+.footer-col h4{
+    font-size: 14px;
+    color: white;
+    text-transform:capitalize;
+    margin-bottom: -10px;
+    font-weight: 500;
+    position: relative;
+    padding-left: 40px;
+}
+.footer-col h4 ::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: orange;
+    height: 2px;
+    box-sizing: border-box;
+    width: px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 13px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: rgb(255, 242, 218) ;
+    padding-left: 8px;
+}
+.playstore{
+    margin-left: 5%;
+    margin-top: 1%;
+}
+.appstore{
+    margin-left: 3%;
+    margin-top: 1%;
+}
+.foot-col-sol .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease ;
+    
+}
+.foot-col-sol .social-links a:hover{
+    color: grey;
+    background-color: rgb(255, 255, 255);
+}
+.foot-col-sol{
+    background-color:#202124;
+    /* border: 1px solid red; */
+    margin-top: -25px;
+}
+.social-links{
+    margin-left: 85%;
+}
+/* css for footer has been completed  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Patua+One&family=Secular+One&display=swap');
+body {font-family: Arial, Helvetica, sans-serif;}
+
+       .container-box{
+           height: 350px;
+           width: 101%;
+           margin-left: -1%;
+           /* border:  1px solid rgb(255, 216, 44); */
+           /* margin: auto; */
+           background-color: #f8f7f5;
+           margin-top: -73px
+       }
+       .kfc-giftcard>p{
+           font-family: 'Secular One', sans-serif;
+           font-size: 64px;
+           font-weight: 700;
+           padding-top: 5%;
+           text-align: center;
+       }
+       .check-button>button{
+         background-color: #f8f7f5;
+         color: black;
+         margin-left: 650px;
+         margin-top: -60px;
+         border: 2.2px solid black;
+         font-size: 14px;
+         height: 50px;
+       }
+       .check-button>button:hover{
+           background-color: black;
+           color: white;
+       }
+       .buy-card{
+         font-size: 20px;
+         font-family: 'Secular One', sans-serif;
+         font-weight: 700;
+         margin-top: 80px;
+       }
+       .buy-card>p{
+           margin-left: 340px;
+       }
+       .kfc-line{
+           border-bottom: 2px solid black;
+           display: block;
+           width: 850px;
+           margin-left: 340px;
+           margin-top: -10px;
+       }
+       .kfc-giftcard-img{
+           text-align: center;
+           margin-top: 80px;
+       }
+       .terms-condit{
+           width: 70%;
+           /* border: 1px solid red; */
+           padding-top: 40px;
+           margin: auto;
+       }
+       .terms-condit .terms{
+           text-align: left;
+           font-size: 15px;
+           font-weight: 600;
+           color: #494949;
+           margin-bottom: -10px;
+       }
+       .terms-condit .conditions{
+           text-align: justify;
+           line-height: 22px;
+           font-size: 12px;
+           font-weight: 400;
+           color: #494949;
+           margin-bottom: 50px;
+       }
+       .deals-gls{
+            text-decoration: none;
+            color : black ; 
+        } 
+
+
+       /* css for the gifcard page completed  */
+
+</style>
+</head>
+<body>
+    <header>
+        <div class="topmenu">
+            <div></div>
+            <div>
+                <a href="index.html"><img class="imgkfc" src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg" alt=""></a>
+            </div>
+            <div class="div3"><h4 class="menuname"><a class="deals-gls" href="menu.html">Menu</a></h4></div>
+            <div><h4><a  class="deals-gls" href="deals.html">Deals</a></h4></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            
+            <div><img class="imgsignin" src="https://images.ctfassets.net/wtodlh47qxpt/6bJdGLRkksNvWP4LI9ZiFF/cb89d6393492fd093e0f99980abfa39e/Account_Icon.svg" alt=""></div>
+            <div id="divseven"><h4 class="signin">Sign in <span class="span"></span></h4></div>
+            <div class="div8" ><div class="ripe">₹0</div><img class="kfcbox" src="https://images.ctfassets.net/wtodlh47qxpt/6qtBVFuno7pdwOQ9RIvYm9/d13e9b7242980972cf49beddde2cc295/bucket_cart_icon.svg" alt=""></div>
+        </div>
+    </header>
+        <div class="mid">
+          <h4 id="topbar">LET'S ORDER FOR DELIVERY, PICK UP, OR DINE-IN<span><button id="button"><a href="#" style="color : white">start order</a></button></span> </h4>
+        </div>
+<!-- top menu completed must for every page  -->
+
+
+    <div class="container-box">
+      <div class="kfc-giftcard">
+          <p>KFC GIFT CARD</p>
+          </div>
+          <div class="check-button">
+          <button>Check Balance</button>
+      </div>
+    </div>
+
+    <div class="buy-kfc-gift-card">
+        <div class="buy-card">
+            <p>BUY A KFC GIFT CARD</p>
+        </div>
+        <span class="kfc-line"></span>
+        <div class="kfc-giftcard-img">
+            <img src="https://images.ctfassets.net/wtodlh47qxpt/U5m8vUqwjV342206BUH0z/09eccd01ddac7b1941faa60c7ea24381/Gift_Card_Web.svg" alt="giftcardimg">
+        </div>
+
+        <div class="terms-condit">
+            <p class="terms">Terms & Conditions</p>
+            <div class="conditions">
+             <p>KFC Gift Card and Gift Voucher is issued by YUM! Restaurants India Pvt. Ltd. “YUM!” & its authorized franchisee for making
+                  payments at selective and participating KFC Restaurants in India. KFC Gift Voucher (purchased from KFC website) is valid for 6 months from the date of
+                 its issuance, with one-time usage only. KFC Gift Card (Physical card) is valid for 6 months from the date of its issuance, 
+                 with multiple swipe options. Any balance amount in Gift Card and Gift Voucher, after validity period, cannot be exchanged for cash. KFC
+                  gift card and gift vouchers are not transferable. This gift card is not redeemable on KFC website, KFC Airport outlets and select outlets.
+                   No cash refunds will be given against the card incl. in case of loss or otherwise. Rights to amend terms & conditions reserved with Yum! without
+                    any prior notice. For all amendments, card balance & expiry details, please visit online.kfc.co.in. By accepting & using this card, the user 
+                    unconditionally accepts all T&C and shall not raise any disputes against YUM! & it’s authorized franchisees in this regard. Card and Voucher usage
+                    subject to Force Majeure conditions. All disputes subject to exclusive jurisdiction of courts at New Delhi.</p>
+            </div>
+        </div>
+    </div>
+
+
+<!-- footer starts form here  -->
+<footer>
+    <div class="footer">
+        <div class="kfc-logo">
+            <a href="index.html"><img src="https://images.ctfassets.net/wtodlh47qxpt/25FSYFuEtGct8NSrtpKe6d/b602f6fe0bf294e6a6dff5d7648bf594/KFC_Logo.svg" alt="kfc-footer-img"></a>             </div>
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                   <h4>KFC Food</h4>
+                    <ul>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Order Lookup</a></li>
+                        <li><a href="giftcard.html">Gift Card</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="help.html">Get Help</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">KFC Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="cautionNotice.html">Caution Notice</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>KFC India</h4>
+                    <ul>
+                        <li><a href="aboutkfc.html">About KFC</a></li>
+                        <li><a href="#">KFC care</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Our Golden Past</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Find a KFC<i class="fa-solid fa-location-dot"></i></h4>
+                </div>
+            </div>
+        </div>
+        <div class="playstore">
+            <a href="https://play.google.com/store/apps/details?id=com.yum.kfc" target="_blank"><img src="https://images.ctfassets.net/wtodlh47qxpt/6BdZsyjLn64c06uCIE73d1/fb530f5d5231533b049463f6c7e8a2b1/google_play.svg" alt="playstore"></a>  
+          </div>
+          <div class="appstore">
+            <a href="https://apps.apple.com/in/app/kfc-india/id915824379" target="_blank"> <img src="https://images.ctfassets.net/wtodlh47qxpt/em3mcMuAdXWlgucSJiTbS/d3ae7e51ed101d829e459355e255c47f/apple.svg" alt="appstore"></a> 
+          </div>
+    </div>
+    <div class="foot-col-sol">
+       <div class="copyright">
+       </div>
+    <div class="social-links">    
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    </div>
+    </footer>
+
+</body>
