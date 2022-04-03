@@ -1,0 +1,344 @@
+
+/* header style */
+.topmenu{
+    width:100%;
+    display: flex;
+    position: fixed;
+    box-sizing: border-box;
+    padding: 20px 0px;
+    background-color: white;
+    margin-top: -1%;
+} 
+.topmenu > div
+{
+    width:10%;
+    margin:auto;
+} 
+
+.topmenu >div:nth-child(3)
+{
+    width: 60px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.imgkfc{
+    width: 100%;
+    height: 25px;
+}
+.menuname{
+    text-align: center;
+}
+.imgsignin{
+    margin-left:82%;
+}
+.span{
+  border-left: 0.3px solid black;
+  margin-left: 8px;
+}
+#divseven{
+    width:60px;
+}
+.kfcbox{
+    height:40px;
+}
+.div8{
+  display: flex;
+} 
+
+
+/* ...................................................Medium Style ........................................................................*/
+#startOrder{
+    padding-top: 83px;
+    text-align: center;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#startOrder h2{
+ color: aliceblue;
+}
+#startOrder button{
+    background-color: red;
+    color: aliceblue;
+    padding: 1rem 3rem;
+    font-size: 1.3rem;
+    border-radius: 35px;
+    margin-left: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#dealsOffers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    width: 100%;
+    height: 380px;
+    background-color: gray;
+    color: white;
+    content: "";
+    background: url("https://online.kfc.co.in/static/media/offer_deals_banner.777f20e1.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.9;
+}
+#national{
+    width: 70%;
+    height: 200px;
+    margin: auto;
+    margin-left: 15%;
+    border-radius: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+#national div img{
+    width: 7%;
+}
+#innerNational{
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    padding-bottom: 50px;
+    font-weight: bolder;
+}
+#innerNational p a{
+    color: rgb(56, 53, 53);
+    font-size: 20px;
+}
+#deals{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    flex-wrap: wrap;
+    width: 70%;
+    gap: 3%;
+    border-radius: 10px solid black;
+    margin: auto;
+   
+}
+#deals>div{
+    border-radius: 15px;
+    text-align: center;
+    overflow:hidden;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+#deals>div:nth-child(1){
+    background:url("https://online.kfc.co.in/static/media/Native_select%20a%20kfc_grey%20image.6e97ff02.svg");
+    color: aliceblue;
+    position:relative;
+    z-index: -2;
+    background-size:cover;
+    background-repeat: no-repeat;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#deals>div:nth-child(1) button{
+    color: aliceblue;
+    background:none;
+    border: 1px solid white;
+    margin-top: 25px;
+    border-radius: 25px;
+    padding: 15px 40px;
+}
+#deals>div:nth-child(1) button:hover{
+    background-color: aliceblue;
+    color: black;
+}
+#deals>div:nth-child(2){
+    background-color: #E4002b;
+    color: aliceblue;
+    text-align: center;
+    font-size: 35px;
+    padding: 30px 10px;
+}
+#deals>div:nth-child(2) button{
+    background-color: #E4002b;
+    color:whitesmoke;
+    font-size: 25px;
+    border: 1px solid whitesmoke;
+    padding:10px 40px;
+    margin-top: 7%;
+    border-radius: 30px;
+}
+#deals>div:nth-child(2) button:hover{
+    background-color: aliceblue;
+    color: black;
+}
+#deals div img{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+#deals div h4{
+    font-size: 40px;
+    color: #E4002b;
+    margin :0px 0px 5px 5px;
+    
+}
+#deals div p{
+ font-size: 20px;
+ text-align: center;
+ padding: 4px;
+}
+#deals>div div{
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    margin-bottom: 45px;
+}
+#deals>div div button{
+          height: 42px;
+           width: 120px;
+           border-radius: 20px;
+           border: 1px solid black;
+           background-color: white;
+           font-weight: 500;
+           cursor: pointer;
+           color: black;
+           font-size: 14px;
+           margin-top: 15px;
+}
+#deals>div div button:hover{
+    background-color: black;
+    color: white;
+}
+#deals>div div p{
+    text-decoration: underline;
+}
+#deals>div div p:hover{
+    background-color: gray;
+}
+  
+
+/* multimedia screen 1050 px maximum */
+@media only screen and (max-width:1000px){
+    #deals
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media only screen and (max-width:600px){
+    #deals
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+/* -------------------------------footer css ------------------------------------*/
+footer{
+    margin-top: 30px;
+}
+.container{
+    max-width: 60%;
+    background-color:#202124;
+    margin-left: 5% ;
+    display: flex;
+    height: 220px;
+}
+.kfc-logo{
+    max-width: 10%;
+    margin-left: 7%;
+    margin-top: 1%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color:#202124;
+    width: 101%;
+    margin-left: -0.5%;
+    padding: 70px 0;
+    display: flex;
+}
+.footer-col{
+    width:20%;
+    padding: 0 px;
+}
+.footer-col h4{
+    font-size: 14px;
+    color: white;
+    text-transform:capitalize;
+    margin-bottom: -10px;
+    font-weight: 500;
+    position: relative;
+    padding-left: 40px;
+}
+.footer-col h4 ::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: orange;
+    height: 2px;
+    box-sizing: border-box;
+    width: px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 13px;
+    /* text-transform: capitalize; */
+    text-decoration: none;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: rgb(255, 242, 218) ;
+    padding-left: 8px;
+}
+.playstore{
+    margin-left: 5%;
+    margin-top: 1%;
+}
+.appstore{
+    margin-left: 3%;
+    margin-top: 1%;
+}
+.foot-col-sol .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease ;
+    
+}
+.foot-col-sol .social-links a:hover{
+    color: grey;
+    background-color: rgb(255, 255, 255);
+}
+.foot-col-sol{
+    background-color:#202124;
+    width: 101%;
+    margin-left: -0.5%;
+    /* border: 1px solid red; */
+    margin-top: -25px;
+}
+.social-links{
+    margin-left: 85%;
+}
+.fa-solid{
+    color: red;
+}
+.footer-col>#underline a{
+    text-decoration: underline;
+}
